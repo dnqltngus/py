@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block title %}
-    Sign up - 타워 쇼핑몰
+    Sign up - 타워 컬렉션
 {% endblock %}
 
 {% block content %}
@@ -13,7 +13,7 @@
     <div class="row mt-5">
         <div class="col-12 text-center">
             <h1>Sign up</h1>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your info with anyone else.</small>
+            <small id="emailHelp" class="form-text text-muted">IT경영학과 이수현 백승준</small>
         </div>
     </div>
 </div>
@@ -28,32 +28,32 @@
             <form method = "POST" action=".">
                 {% csrf_token %}
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control btn-block" id="username" placeholder="username" name="username" style="width:50%">
+                    <label for="username">사용자이름</label>
+                    <input type="text" class="form-control btn-block" id="username" placeholder="사용자이름" name="username" style="width:50%">
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control btn-block" id="password" placeholder="password" name="password" style="width:50%">
+                    <label for="password">비밀번호</label>
+                    <input type="password" class="form-control btn-block" id="password" placeholder="비밀번호" name="password" style="width:50%">
                 </div>
                 <div class="form-group">
-                    <label for="re_password">Re_Password</label>
-                    <input type="password" class="form-control btn-block" id="re_password" placeholder="re_password" name="re_password" style="width:50%">
+                    <label for="re_password">비밀번호 확인</label>
+                    <input type="password" class="form-control btn-block" id="re_password" placeholder="비밀번호 확인" name="re_password" style="width:50%">
                 </div>
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control btn-block" id="name" placeholder="name" name="name" style="width:50%">
+                    <label for="name">이름</label>
+                    <input type="text" class="form-control btn-block" id="name" placeholder="이름" name="name" style="width:50%">
                 </div>
                 <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="text" class="form-control btn-block" id="phone" placeholder="phone" name="phone" style="width:50%">
+                    <label for="phone">핸드폰 번호</label>
+                    <input type="text" class="form-control btn-block" id="phone" placeholder="핸드폰 번호" name="phone" style="width:50%">
                 </div>
                 <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control btn-block" id="address" placeholder="address" name="address" style="width:50%">
+                    <label for="address">주소</label>
+                    <input type="text" class="form-control btn-block" id="address" placeholder="주소" name="address" style="width:50%">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control btn-block" id="email" placeholder="email" name="email" style="width:50%">
+                    <input type="email" class="form-control btn-block" id="email" placeholder="Email" name="email" style="width:50%">
                 </div>
                 <button type="submit" class="btn btn-secondary btn-block my_custom_button"  style="width:50%" onclick="location.href='/shop/'">Sign up</button>
                 <br>
